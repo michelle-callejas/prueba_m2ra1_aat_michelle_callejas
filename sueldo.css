@@ -1,0 +1,252 @@
+body {
+    width: 100%;
+    margin: auto;
+    padding: auto;
+    font-family: monospace;
+
+
+    .header {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        background-color: #a0cbe5af;
+    }
+
+    #redesSociales {
+        padding: 100px;
+        margin: 10px;
+    }
+
+    #logoPrincipal {
+        padding: 30px;
+        margin: 20px;
+    }
+
+    menu {
+        border: 1px solid black;
+        margin: 25px;
+    }
+
+    .contenedor {
+        width: 90%;
+        justify-content: center;
+        align-content: center;
+        align-self: center;
+        margin: auto;
+        padding: auto;
+    }
+}
+
+.navbar {
+    background-color: #a0cbe5af;
+
+}
+
+#informacion {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+#logoSecundario {
+    width: 20%;
+    height: 100%;
+    margin: 20px;
+    padding: auto;
+    text-align: center;
+    border: 1px solid black;
+}
+
+#logoSecundario img {
+    width: 100%;
+    height: 40%;
+
+}
+
+#areaIngresoDatos {
+    display: grid;
+    grid-area: "calculos";
+    grid-template-columns: 50% 50%;
+    grid-template-areas: 'ingresos egresos';
+    width: 100%;
+    margin: 20px;
+    font-size: x-large;
+}
+
+#contenidoPrincipal {
+    display: flex;
+    width: 100%;
+}
+
+
+
+form {
+    width: 100%;
+    border: 1px solid black;
+    padding: 30px;
+}
+
+#areaIngresos {
+    margin: 30px;
+    width: 90%;
+    grid-area: "ingresos";
+
+}
+
+#areaEgresos {
+    margin: 30px;
+    width: 90%;
+    grid-area: "egresos";
+
+}
+
+
+#totalIngresos,
+#totalEgresos {
+    height: 100px;
+    width: 100%;
+    background-color: rgba(96, 152, 184, 0.596);
+}
+
+#resultados {
+    padding: 20px;
+    grid-area: "resultados";
+    width: 100%;
+    text-align: center;
+    justify-content: space-around;
+}
+
+#resultados button input {
+    width: 80%;
+    text-align: center;
+    justify-content: center;
+}
+
+
+
+#areaTotal {
+    width: 80%;
+    padding: 20px;
+    margin: auto;
+}
+
+
+#columna {
+    border: 1px solid black;
+    width: 80%;
+    margin: 20px;
+    grid-template-rows: auto auto;
+    display: grid;
+    grid-template-areas: 'calculos'
+        'resultado';
+}
+
+#totalPagar {
+    height: 100px;
+    width: 100%;
+    background-color: rgba(96, 152, 184, 0.596);
+}
+
+footer {
+    background-color: #a0cbe5;
+    color: rgb(0, 0, 0);
+    font-size: x-large;
+    text-align: center;
+    height: 10%;
+}
+
+#totalPagar, #totalEgresos,#totalIngresos{
+    text-align: center;
+    font-size: xx-large;
+    color: crimson;
+    font-weight: 400;
+}
+
+#btnEnviar{
+    width: 50%;
+    height: 20%;
+    font-size: xx-large;
+}
+
+@media only screen and (max-width: 768px) {
+    #contenidoPrincipal {
+        justify-content: center;
+        display: grid;
+        grid-template-areas:
+            "columna"
+            "logoSecundario";
+      
+        width: 100%;
+    }
+
+    form{
+        border: 0px
+    }
+    #columna{
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    #areaIngresoDatos{
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    #areaIngresos, #areaEgresos, #logoSecundario {
+        width: 100%;
+        margin: 0;
+        border: 0px;
+        padding: 5px;
+    }
+
+    #infoEmpleado {
+        grid-area: infoEmpleado;
+    }
+
+    #informacionTablas {
+        grid-area: informacionTablas;
+    }
+
+    #logoSecundario {
+        grid-area: logoSecundario;
+        text-align: center;
+        margin-bottom: auto;
+    }
+
+    #redesSociales{
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        justify-content: space-around;
+        display: flex;
+        flex-direction: row;
+        grid-area: "redesSociales";
+    }
+
+
+    .header{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        grid-template-columns: 100%;
+   
+        grid-template-rows: 'logoPrincipal' 'redesSociales';
+    }
+
+
+#bottom {
+    width: 100%;
+    grid-area: bottom;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+}

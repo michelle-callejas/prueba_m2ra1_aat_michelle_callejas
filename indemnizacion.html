@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indemnización</title>
+    <link rel="stylesheet" href="../css/indem.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <script src="../js/main3.js"></script>
+</head>
+
+<body>
+    <div class="contenedor">
+        <header class="header">
+            <div id="logoPrincipal" class="animate__animated animate__bounceInLeft"><img src="../img/intecap1.png" alt="" id="logo1"></div>
+            <div id="redesSociales" class="animate__animated animate__bounceInLeft">
+                <a href="https://www.facebook.com/intecapoficial/?locale=es_LA"><img src="../img/1.png" alt=""></a>
+                <a href="https://twitter.com/intecapoficial?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><img
+                        src="../img/2.png" alt=""></a>
+                <a href="https://www.instagram.com/intecapoficial/?g=5"><img src=" ../img/4.png" alt=""></a>
+                <a href="https://www.youtube.com/intecapoficial"><img src="../img/3.png" alt=""></a>
+                <a href="https://www.linkedin.com/school/intecapoficial/?originalSubdomain=gt"><img src="../img/5.png"
+                        alt=""></a>
+            </div>
+        </header>
+        <menu>
+            <nav class="navbar navbar-expand-lg bg-color" style="background-color: #a0cbe5af; font-size: larger; font-style: inherit;">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="#">
+                    <img src="../img/logo.png" alt="Logo" width="30" height="45" class="d-inline-block align-text-top">
+                  
+                  </a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                      <li class="nav-item">
+                        <a class="nav-link" href="../paginas/index.html">Inicio</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="../paginas/empleados.html" >Empleados</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="../paginas/sueldo.html" >Sueldo Líquido</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="../paginas/indemnizacion.html" style="font-weight: bolder;">Indemnización</a>
+                      </li>
+                    </ul>
+                    </div>
+                </div>
+              </nav>
+    </menu>
+    <div id="contenidoPrincipal">
+        <div id="columna">
+            <div id="areaIngresoDatos">
+                <div id="areaIngresos">
+                    <h1>Ingresar datos</h1>
+                    <form>
+
+                        <div class="mb-3">
+                            <label for="sueldobase" class="form-label">Sueldo Base</label>
+                            <input type="number" class="form-control" id="sueldoBase">
+
+                        </div>
+                        <div class="mb-3">
+                            <label for="cantidadAn" class="form-label">Cantidad de años trabajados</label>
+                            <input type="number" class="form-control" id="cantidadAn">
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="cantidadMe" class="form-label">Cantidad de meses trabajados</label>
+                            <input type="number" class="form-control" id="cantidadMe">
+                            <div class="form-text" style="color: red;">Ingresa la cantidad de meses que has trabajado durante este año </div>
+
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="salarioPendiente" class="form-label">Salario Pendiente</label>
+                            <input type="number" class="form-control" id="salarioPendiente">
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="deudas" class="form-label">Deudas o cobros pendientes</label>
+                            <input type="number" class="form-control" id="deudasPendientes">
+                        </div>
+                    </form>
+                </div>
+                <div id="areaEgresos">
+                    <h1>Prestaciones laborales</h1>
+                    <form>
+                        <div class="mb-3">
+                            <label for="bono14" class="form-label">Bono 14</label>
+                            <input type="number" class="form-control" id="bono14" readonly>
+
+                        </div>
+                        <div class="mb-3">
+                            <label for="aguinaldo" class="form-label">Aguinaldo</label>
+                            <input type="number" class="form-control" id="aguinaldo" readonly>
+                        </div>
+
+                    </form>
+                </div><br>
+
+
+            </div>
+            <div id="areaTotal">
+                <article id="resultados" class="mb-3">
+                    <button type="button" class="btn " id="btnIndemnizacion" style="background-color: #a0cbe5af;">Obtener indemnización</button><br>
+                    <input type="text" class="form-control" id="totalIndemnizacion" readonly
+                        style="background-color: #a0cbe5af;">
+                </article>
+            </div>
+        </div>
+        <aside id="logoSecundario" class="animate__animated animate__bounceInLeft">
+            <img src="../img/intecap2.png"
+                alt=""><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        </aside>
+    </div>
+    <footer>
+        ¡Acepto el Reto!
+    </footer>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+</body>
+</html>
